@@ -1,0 +1,9 @@
+
+db.createCollection( 'place', {validator: {$jsonSchema: {bsonType: 'object',title:'place',required: [         'pref_name'],properties: {pref_name: {bsonType: 'string'},type: {enum: , description:'Place Type: The kind of place. (Note: use Pleiades place type vocabulary for term list)',},alt_name: {bsonType: 'array',items: {
+title:'object',properties: {language: {bsonType: 'string'},name: {bsonType: 'string'}}}},desc: {bsonType: 'string'},bibl: {bsonType: 'array',description:'Bibliography: A secondary scholarly source that provides information about the work ',items: {
+title:'object',properties: {ref: {bsonType: 'objectId', description:'Reference: The objectId of a bibliographic item. Must be an objectId of an existing Bibl object'},type: {enum: ['edition', 'translation', 'other', null], description:'Type (Bibliography): The type of bibliographic item cited, i.e. \'edition\', translation\', or \'other\'.',},cite_rg: {bsonType: 'string', description:'Cited Range: The logic subsection of the bibliographic item being referenced'}}}},loc: {bsonType: 'array',description:'Location: The geographic location',items: {
+title:'object',properties: {type: {bsonType: 'string'},gps: {bsonType: 'string'}}}},assoc_date: {bsonType: 'array',items: {
+title:'object',properties: {type: {bsonType: 'string'},label: {bsonType: 'string'},normalized: {bsonType: 'date'}}}},rel_con: {bsonType: 'array',items: {
+title:'object',properties: {name: {bsonType: 'string'},uri: {bsonType: 'string'},source: {bsonType: 'string'}}}},refno: {bsonType: 'array',items: {
+title:'object',properties: {name: {bsonType: 'string'},id: {bsonType: 'string'},source: {bsonType: 'string'}}}},assoc_place: {bsonType: 'array',items: {
+title:'object',properties: {id: {bsonType: 'objectId'},role: {enum: }}}}}         }      }});  

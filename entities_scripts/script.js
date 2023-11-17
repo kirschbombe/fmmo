@@ -1,0 +1,2 @@
+
+db.createCollection( 'script', {validator: {$jsonSchema: {bsonType: 'object',title:'script',required: [         'writing_system'],properties: {label: {bsonType: 'string'},writing_system: {enum: },dates_in_use: {bsonType: 'string'},geo_scope: {bsonType: 'string'},note: {bsonType: 'string'}}         }      }});  
