@@ -10,7 +10,7 @@ A data model and object relationship ontology for representing complexity in ear
 
 Manuscript object model: https://dawnchildress.com/fmmo/sinai_objects/
 
-Manuscript entitles model: https://dawnchildress.com/fmmo/sinai_entities/
+Manuscript entities model: https://dawnchildress.com/fmmo/sinai_entities/
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
